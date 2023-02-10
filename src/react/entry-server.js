@@ -3,11 +3,11 @@ import ssrPrepass from 'react-ssr-prepass';
 import { renderToString } from 'react-dom/server.js';
 import { StaticRouter } from 'react-router-dom/server';
 import { HelmetProvider } from 'react-helmet-async';
-import { getFullPath, withoutSuffix } from 'vite-ssr/utils/route';
-import { createRouter } from 'vite-ssr/react/utils';
-import coreViteSSR from 'vite-ssr/core/entry-server.js';
-import { provideContext } from 'vite-ssr/react/components.js';
-export { ClientOnly, useContext } from 'vite-ssr/react/components.js';
+import { getFullPath, withoutSuffix } from 'vite-ssr/src/utils/route';
+import { createRouter } from 'vite-ssr/src/react/utils';
+import coreViteSSR from 'vite-ssr/src/core/entry-server.js';
+import { provideContext } from 'vite-ssr/src/react/components.js';
+export { ClientOnly, useContext } from 'vite-ssr/src/react/components.js';
 let render = renderToString;
 // @ts-ignore
 if (__USE_APOLLO_RENDERER__) {

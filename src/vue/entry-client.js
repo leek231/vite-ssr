@@ -1,10 +1,10 @@
 import { createSSRApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import createClientContext from 'vite-ssr/core/entry-client.js';
-import { getFullPath, withoutSuffix } from 'vite-ssr/utils/route';
-import { addPagePropsGetterToRoutes } from 'vite-ssr/vue/utils';
-import { provideContext } from 'vite-ssr/vue/components.js';
-export { ClientOnly, useContext } from 'vite-ssr/vue/components.js';
+import createClientContext from 'vite-ssr/src/core/entry-client.js';
+import { getFullPath, withoutSuffix } from 'vite-ssr/src/utils/route';
+import { addPagePropsGetterToRoutes } from 'vite-ssr/src/vue/utils';
+import { provideContext } from 'vite-ssr/src/vue/components.js';
+export { ClientOnly, useContext } from 'vite-ssr/src/vue/components.js';
 export const viteSSR = async function viteSSR(App, { routes, base, routerOptions = {}, pageProps = { passToPage: true }, debug = {}, ...options }, hook) {
     if (pageProps && pageProps.passToPage) {
         addPagePropsGetterToRoutes(routes);

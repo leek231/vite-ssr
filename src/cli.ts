@@ -24,7 +24,7 @@ const [command] = args
 
 if (command === 'build') {
   // @ts-ignore
-  const build = require('./build/index')
+  const build = require('./build')
 
   ;(async () => {
     const { mode, ssr, watch } = options
@@ -43,7 +43,7 @@ if (command === 'build') {
   command === undefined ||
   command.startsWith('-')
 ) {
-  require('./dev/index').startServer(options)
+  require('./dev').startServer(options)
 } else {
   console.log(`Command "${command}" not supported`)
 }

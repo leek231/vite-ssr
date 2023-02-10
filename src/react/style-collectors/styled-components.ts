@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react'
 import type { Context } from '../types'
 // @ts-ignore
-import { ServerStyleSheet } from 'vite-ssr/react/style-collectors/styled-components'
+import { ServerStyleSheet } from 'styled-components'
 
 function ssrCollector(context: Context) {
   const sheet = new ServerStyleSheet()

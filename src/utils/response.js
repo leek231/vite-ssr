@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useClientRedirect = exports.useSsrResponse = void 0;
-const defer_1 = require("vite-ssr/utils/defer");
+const defer_1 = require("vite-ssr/src/utils/defer");
 const isRedirect = ({ status = 0 }) => status >= 300 && status < 400;
 function useSsrResponse() {
     const deferred = (0, defer_1.defer)();

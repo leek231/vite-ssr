@@ -555,7 +555,7 @@ import styleCollector from 'vite-ssr/react/style-collectors/emotion'
 export default viteSSR(App, { routes, styleCollector })
 ```
 
-You can provide your own by looking at the [implementation](react/style-collectors/) of any of the existing collectors.
+You can provide your own by looking at the [implementation](./src/react/style-collectors/) of any of the existing collectors.
 
 Note that you still need to install all the required dependencies from these packages (e.g. `@emotion/server`, `@emotion/react` and `@emotion/cache` when using Emotion).
 
