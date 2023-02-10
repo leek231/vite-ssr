@@ -5,12 +5,12 @@
   },
   "exclude": [],
   "include": [
-    "./src/vue/*",
-    "./src/vue/**/*",
-    "./src/react/*",
-    "./src/react/**/*",
+    "./vue/*",
+    "./vue/**/*",
+    "./react/*",
+    "./react/**/*",
     "./src/vanilla/*",
     "./src/vanilla/**/*",
-    "./src/utils/*"
+    "./utils/*"
   ]
 }

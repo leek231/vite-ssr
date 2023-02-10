@@ -1,6 +1,6 @@
 import { test } from 'uvu'
 import * as assert from 'uvu/assert'
-import { serializeState } from '../../../src/utils/serialize-state'
+import { serializeState } from '../../../utils/serialize-state'
 
 test('serializeState', () => {
   // Simple case.

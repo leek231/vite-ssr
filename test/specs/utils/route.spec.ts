@@ -7,7 +7,7 @@ import {
   withoutSuffix,
   createUrl,
   getFullPath,
-} from '../../../src/utils/route'
+} from '../../../utils/route'
 
 test('withPrefix', () => {
   assert.is(withPrefix('/my/path', '/'), '/my/path')

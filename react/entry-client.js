@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import createClientContext from 'vite-ssr/src/core/entry-client.js';
+import createClientContext from 'vite-ssr/core/entry-client.js';
 import { BrowserRouter, useNavigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { withoutSuffix } from 'vite-ssr/src/utils/route';
-import { createRouter } from 'vite-ssr/src/react/utils';
-import { provideContext } from 'vite-ssr/src/react/components.js';
-export { ClientOnly, useContext } from 'vite-ssr/src/react/components.js';
+import { withoutSuffix } from 'vite-ssr/utils/route';
+import { createRouter } from 'vite-ssr/react/utils';
+import { provideContext } from 'vite-ssr/react/components.js';
+export { ClientOnly, useContext } from 'vite-ssr/react/components.js';
 export const viteSSR = async function (App, { routes, base, suspenseFallback, PropsProvider, pageProps, debug = {}, styleCollector, ...options }, hook) {
     const url = new URL(window.location.href);
     const routeBase = base && withoutSuffix(base({ url }), '/');

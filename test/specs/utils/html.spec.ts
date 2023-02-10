@@ -1,7 +1,7 @@
 import '../../setup/globals'
 import { test } from 'uvu'
 import * as assert from 'uvu/assert'
-import { buildHtmlDocument } from '../../../src/utils/html'
+import { buildHtmlDocument } from '../../../utils/html'
 
 const indexHtml = `
 <!DOCTYPE html>

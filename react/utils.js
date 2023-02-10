@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useParams } from 'react-router-dom';
-import { getFullPath } from 'vite-ssr/src/utils/route';
-import { createUrl } from 'vite-ssr/src/utils/route';
+import { getFullPath } from 'vite-ssr/utils/route';
+import { createUrl } from 'vite-ssr/utils/route';
 export function createRouter({ base, routes, initialState, PropsProvider, pagePropsOptions = { passToPage: true }, }) {
     let currentRoute = undefined;
     function augmentRoute(originalRoute) {

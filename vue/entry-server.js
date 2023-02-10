@@ -1,12 +1,12 @@
 import { createApp } from 'vue';
 import { renderToString } from '@vue/server-renderer';
 import { createRouter, createMemoryHistory } from 'vue-router';
-import { getFullPath, withoutSuffix } from 'vite-ssr/src/utils/route';
-import { addPagePropsGetterToRoutes } from 'vite-ssr/src/vue/utils';
+import { getFullPath, withoutSuffix } from 'vite-ssr/utils/route';
+import { addPagePropsGetterToRoutes } from 'vite-ssr/vue/utils';
 import { renderHeadToString } from '@vueuse/head';
-import coreViteSSR from 'vite-ssr/src/core/entry-server.js';
-import { provideContext } from 'vite-ssr/src/vue/components.js';
-export { ClientOnly, useContext } from 'vite-ssr/src/vue/components.js';
+import coreViteSSR from 'vite-ssr/core/entry-server.js';
+import { provideContext } from 'vite-ssr/vue/components.js';
+export { ClientOnly, useContext } from 'vite-ssr/vue/components.js';
 export const viteSSR = function viteSSR(App, { routes, base, routerOptions = {}, pageProps = { passToPage: true }, ...options }, hook) {
     if (pageProps && pageProps.passToPage) {
         addPagePropsGetterToRoutes(routes);
