@@ -19,7 +19,7 @@ for (let i = 0; i < args.length; i++) {
 const [command] = args;
 if (command === 'build') {
     // @ts-ignore
-    const build = require('dist/build');
+    const build = require('vite-ssr/build');
     (async () => {
         const { mode, ssr, watch } = options;
         await build({
@@ -34,7 +34,7 @@ if (command === 'build') {
 else if (command === 'dev' ||
     command === undefined ||
     command.startsWith('-')) {
-    require('dist/dev').startServer(options);
+    require('vite-ssr/dev').startServer(options);
 }
 else {
     console.log(`Command "${command}" not supported`);

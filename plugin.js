@@ -1,5 +1,5 @@
 "use strict";
-const server_1 = require("dist/dev/server");
+const server_1 = require("vite-ssr/dev/server");
 const vite_1 = require("vite");
 const pluginName = 'vite-ssr';
 const entryServer = '/entry-server';
